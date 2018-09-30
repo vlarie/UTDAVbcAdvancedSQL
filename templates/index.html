@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+    <meta charset="UTF-8">
+    <title>Surfs Up! Hawaii Weather</title>
+    <style>
+     body {
+        background-color: #f3f1ba;
+     }
+
+     h1 {
+        font-size: 50px;
+        font-family: Verdana;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin: 0 px;
+        background-color: #016a80;
+    }
+
+    h3 {
+        font-size: 25px;
+        margin: 2 px;
+        padding: 0 px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-align: center;
+    }
+
+    h4 {
+        font-size: 20px;
+        font-family: Verdana;
+        text-align: left;
+    }
+
+    img {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0 px;
+        display: block;
+    }
+
+    p {
+        text-align: center;
+        font-family: Verdana;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    ul {
+        text-align: left;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 20px;
+        padding-bottom: 10px;
+        list-style-position: inside;
+    }
+
+    li {
+        text-align: left;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 16px;
+        border-width: 5px;
+        margin-bottom: 5px;
+        list-style-position: inside;
+    }
+    </style>
+    </head>
+
+    <body>
+        <img src="/static/Images/surfs-up.jpeg" alt="Cowabunga!" width="50%">
+        <h1>Surf's Up!</h1>
+        <h3>Check out Hawaii's weather history for better trip planning</h3>
+        <h4>Available Queries:</h4>
+        <ul>
+        <li>Last Year's Precipitation:   <a href='/api/v1.0/precipitation'>/api/v1.0/precipitation</a> </li>
+        <li>List of Stations:   <a href='api/v1.0/stations'>api/v1.0/stations</a> </li>
+        <li>Last Year's Temperature Observations:   <a href='/api/v1.0/tobs'>/api/v1.0/tobs</a> </li>
+        <li>Summary Stats for a Given Start Date:   <a href='/api/v1.0/<start>'>/api/v1.0/&lt;start&gt;</a> </li>
+            <ul><li>Replace &lt;start&gt; with your query date formatted as Year-Month-Day (e.g. 2015-08-25)</li></ul>
+            <!-- This section is in development for creating easy user inputs for start and end dates -->
+            <!-- <input type="text" id="start" placeholder="2014-07-14" class="form-control"> 
+            <button type="submit" clss="btn btn-warning btn-block" onclick="start()">Search</button>
+            <div id="data">
+
+            </div> -->
+        <li>Summary Stats for a Given Date Range:   <a href='/api/v1.0/<start>/<end>'>/api/v1.0/&lt;start&gt;/&lt;end&gt;</a> </li>
+            <ul><li>Replace &lt;start&gt; and &lt;end&gt; with your query date formatted as Year-Month-Day (e.g. 2015-08-25)
+            </li></ul>
+
+        </ul>
+    <footer>
+
+    </footer>
+<!-- This section is in development for creating easy user inputs for start and end dates
+
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+
+    <script 
+    src="/static/js/logic.js"></script> -->
+
+    </body> 
+</html>
