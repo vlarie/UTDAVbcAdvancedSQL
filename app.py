@@ -26,7 +26,7 @@ session = Session(engine)
 
 
 #######################################################
-#####  Connection creation for database queries  #####
+################  Flask Application  #################
 #####################################################
 
 from flask import Flask, render_template, jsonify
